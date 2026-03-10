@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurfazrina Azmi — IT Graduate &amp; Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- PDF Modal -->
+<div class="pdf-modal" id="pdfModal">
+    <div class="pdf-modal-backdrop" id="pdfModalBackdrop"></div>
+    <div class="pdf-modal-box">
+        <div class="pdf-modal-header">
+            <div class="pdf-modal-title">
+                <span class="pdf-modal-label">Case Study</span>
+                <span class="pdf-modal-name">DomTrack — Domain Management System</span>
+            </div>
+            <div class="pdf-modal-actions">
+                <a href="images/DomTrack_Report.pdf" target="_blank" class="pdf-modal-download">&#8599;</a>
+                <button class="pdf-modal-close" id="pdfModalClose">&#10005;</button>
+            </div>
+        </div>
+        <div class="pdf-modal-body">
+            <iframe id="pdfIframe" src="" title="DomTrack Case Study"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="nav-logo">NFA<span>.</span></div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <div class="hero-eyebrow">
+            <div class="hero-eyebrow-line"></div>
+            <span>IT Graduate &amp; Full-Stack Developer</span>
+        </div>
+        <h1 class="hero-name">Nurfazrina</h1>
+        <span class="hero-name-accent">Azmi</span>
+        <p class="hero-role">Web &amp; Mobile Development &nbsp;·&nbsp; Full-Stack &nbsp;·&nbsp; Always Building</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary"><span>View My Work</span></a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-right-pattern"></div>
+        <div class="hero-photo-wrap">
+            <div class="hero-photo-frame"></div>
+            <img src="images/NurfazrinaAzmi.png" alt="Nurfazrina Azmi" class="hero-photo">
+            <div class="hero-photo-badge">Open to Work</div>
+        </div>
+    </div>
+
+    <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+    </div>
+
+    <div class="hero-marquee">
+        <div class="marquee-track">
+            <div class="marquee-item"><span>Web Development</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Flutter &amp; Mobile</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Laravel &amp; PHP</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>MySQL &amp; Firebase</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>REST API</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Full-Stack</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Cisco Certified</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>SAS Analytics</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Web Development</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Flutter &amp; Mobile</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Laravel &amp; PHP</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>MySQL &amp; Firebase</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>REST API</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Full-Stack</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Cisco Certified</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>SAS Analytics</span><div class="marquee-dot"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="section-inner">
+        <div class="section-label">
+            <div class="section-label-line"></div>
+            <span>About Me</span>
+        </div>
+
+        <div class="about-layout" id="aboutLayout">
+
+            <div class="about-visual-side">
+                <div class="about-stat-block">
+                    <div class="stat-cell">
+                        <div class="stat-num">3.37</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-cell">
+                        <div class="stat-num">3<sup>+</sup></div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-cell-wide">
+                        <div>
+                            <div class="stat-num">2022&#8211;2026</div>
+                            <div class="stat-label">B.IT (Hons.) &#8212; UTHM</div>
+                        </div>
+                        <div class="stat-aside">Universiti Tun<br>Hussein Onn MY</div>
+                    </div>
+                </div>
+                <div class="about-meta-list">
+                    <div class="meta-row">
+                        <div class="label">Based in</div>
+                        <div class="value">Segamat, Johor</div>
+                    </div>
+                    <div class="meta-row">
+                        <div class="label">Degree</div>
+                        <div class="value">B.IT (Hons.) UTHM</div>
+                    </div>
+                    <div class="meta-row">
+                        <div class="label">Internship</div>
+                        <div class="value">Pemaju Digital</div>
+                    </div>
+                    <div class="meta-row">
+                        <div class="label">Dean's List</div>
+                        <div class="value">Sem 1 &amp; 3 &#10022;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text-side">
+                <h2>A developer who <em>builds</em> end-to-end.</h2>
+                <p class="about-desc">
+                    IT graduate from UTHM with a CGPA of 3.37 and a genuine love for building things that work, from responsive web apps to mobile experiences. I'm comfortable across the stack, frontend interfaces, backend logic, database design, and deployment. Whether it's a Flutter app with real-time Firebase sync, a Laravel system with RBAC and CRUD, or a live domain management platform shipped during my internship at Pemaju Digital, I see projects through from idea to production. I pick up new tools fast, take ownership of what I build, and I'm always looking for the next problem worth solving.
+                </p>
+                <div class="skills-title">Tech Stack</div>
+                <div class="skills-row">
+                    <div class="skill-tag"><span>HTML / CSS</span></div>
+                    <div class="skill-tag"><span>JavaScript</span></div>
+                    <div class="skill-tag"><span>Bootstrap</span></div>
+                    <div class="skill-tag"><span>Laravel</span></div>
+                    <div class="skill-tag"><span>Flutter</span></div>
+                    <div class="skill-tag"><span>PHP</span></div>
+                    <div class="skill-tag"><span>MySQL</span></div>
+                    <div class="skill-tag"><span>Firebase</span></div>
+                    <div class="skill-tag"><span>REST API</span></div>
+                    <div class="skill-tag"><span>RBAC / Auth</span></div>
+                    <div class="skill-tag"><span>Git &amp; npm</span></div>
+                    <div class="skill-tag"><span>cPanel</span></div>
+                    <div class="skill-tag"><span>Power BI</span></div>
+                    <div class="skill-tag"><span>SAS Viya</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <div class="section-inner">
+        <div class="section-label">
+            <div class="section-label-line"></div>
+            <span>Projects</span>
+        </div>
+        <h2 class="section-title">Work I'm <em>proud</em> of.</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card" id="proj1">
+                <div class="project-header">
+                    <div class="project-num">01</div>
+                    <div class="project-tags">
+                        <span class="project-tag-item">Mobile</span>
+                        <span class="project-tag-item">Flutter</span>
+                        <span class="project-tag-item">Firebase</span>
+                    </div>
+                </div>
+                <h3>Belly Balance &#8212; Pregnancy Nutrition App</h3>
+                <p>Flutter + Firebase mobile app for tracking daily nutrition throughout pregnancy. Features API-based nutrition analysis, automated calorie calculation, real-time dashboards, and chart visualisation.</p>
+                <div class="project-footer">
+                    <div class="project-stack">
+                        <div class="stack-dot"></div>
+                        <div class="stack-dot"></div>
+                        <div class="stack-dot"></div>
+                    </div>
+                    <a href="https://github.com/faz36/belly_balance_app" target="_blank" class="project-link">View Code <span>&#8594;</span></a>
+                </div>
+            </div>
+
+            <div class="project-card" id="proj2">
+                <div class="project-header">
+                    <div class="project-num">02</div>
+                    <div class="project-tags">
+                        <span class="project-tag-item">Web</span>
+                        <span class="project-tag-item">Laravel</span>
+                        <span class="project-tag-item">MySQL</span>
+                        <span class="project-tag-item private-badge">&#128274; Private</span>
+                    </div>
+                </div>
+                <h3>DomTrack &#8212; Domain Management System</h3>
+                <p>Internship project at Pemaju Digital. Replaced manual Excel workflows with a centralised web system, designed the database schema, built secure login with RBAC, implemented full CRUD, and handled production deployment via cPanel. Reduced manual tracking overhead for the operations team.</p>
+                <div class="project-footer">
+                    <div class="project-stack">
+                        <div class="stack-dot"></div>
+                        <div class="stack-dot"></div>
+                        <div class="stack-dot"></div>
+                    </div>
+                    <button class="project-link project-link-btn" onclick="openCaseStudy()">Read Case Study <span>&#8594;</span></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div class="section-inner">
+        <div class="section-label">
+            <div class="section-label-line"></div>
+            <span>Contact</span>
+        </div>
+
+        <div class="contact-layout" id="contactLayout">
+            <div class="contact-left">
+                <h2>Let's work <em>together.</em></h2>
+                <p>Have a project in mind or want to collaborate? I'd love to hear from you. Let's build something great.</p>
+            </div>
+            <div class="contact-right">
+                <a href="mailto:fazrinaazmi36@gmail.com" class="contact-card">
+                    <div>
+                        <div class="contact-card-label">Email</div>
+                        <div class="contact-card-value">fazrinaazmi36@gmail.com</div>
+                    </div>
+                    <div class="contact-arrow">&#8594;</div>
+                </a>
+                <a href="https://www.linkedin.com/in/nurfazrina-azmi" target="_blank" class="contact-card">
+                    <div>
+                        <div class="contact-card-label">LinkedIn</div>
+                        <div class="contact-card-value">linkedin.com/in/nurfazrina-azmi</div>
+                    </div>
+                    <div class="contact-arrow">&#8594;</div>
+                </a>
+                <a href="https://github.com/faz36" target="_blank" class="contact-card">
+                    <div>
+                        <div class="contact-card-label">GitHub</div>
+                        <div class="contact-card-value">github.com/faz36</div>
+                    </div>
+                    <div class="contact-arrow">&#8594;</div>
+                </a>
+                <a href="tel:+60176425881" class="contact-card">
+                    <div>
+                        <div class="contact-card-label">Phone</div>
+                        <div class="contact-card-value">+60 17-642 5881</div>
+                    </div>
+                    <div class="contact-arrow">&#8594;</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-logo">NFA.</div>
+    <p>&#169; 2025 Nurfazrina Azmi &#8212; Designed &amp; Built with &#9829;</p>
+</footer>
+
+<script>
+/* Custom Cursor */
+var cursor = document.getElementById('cursor');
+var cursorRing = document.getElementById('cursorRing');
+var ringX = 0, ringY = 0, mouseX = 0, mouseY = 0;
+
+document.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top  = mouseY + 'px';
+});
+(function animateRing() {
+    ringX += (mouseX - ringX) * 0.12;
+    ringY += (mouseY - ringY) * 0.12;
+    cursorRing.style.left = ringX + 'px';
+    cursorRing.style.top  = ringY + 'px';
+    requestAnimationFrame(animateRing);
+})();
+document.querySelectorAll('a, button').forEach(function(el) {
+    el.addEventListener('mouseenter', function() {
+        cursor.classList.add('hover');
+        cursorRing.classList.add('hover');
+    });
+    el.addEventListener('mouseleave', function() {
+        cursor.classList.remove('hover');
+        cursorRing.classList.remove('hover');
+    });
+});
+
+/* Navbar scroll */
+var navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* Hamburger */
+var hamburger = document.getElementById('hamburger');
+var mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+});
+function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+}
+
+/* Scroll reveal */
+var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+        if (e.isIntersecting) e.target.classList.add('visible');
+    });
+}, { threshold: 0.12 });
+document.querySelectorAll('#aboutLayout, #proj1, #proj2, #contactLayout').forEach(function(el) {
+    observer.observe(el);
+});
+
+/* PDF Modal */
+var pdfModal    = document.getElementById('pdfModal');
+var pdfIframe   = document.getElementById('pdfIframe');
+var pdfBackdrop = document.getElementById('pdfModalBackdrop');
+var pdfClose    = document.getElementById('pdfModalClose');
+
+function openCaseStudy() {
+    pdfIframe.src = 'images/DomTrack_Report.pdf';
+    pdfModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+function closeCaseStudy() {
+    pdfModal.classList.remove('open');
+    document.body.style.overflow = '';
+    /* delay clearing src so close animation plays first */
+    setTimeout(function() { pdfIframe.src = ''; }, 400);
+}
+pdfClose.addEventListener('click', closeCaseStudy);
+pdfBackdrop.addEventListener('click', closeCaseStudy);
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeCaseStudy();
+});
+</script>
+</body>
+</html>
