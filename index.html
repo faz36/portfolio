@@ -81,7 +81,7 @@
             <div class="hero-photo-badge">Open to Work</div>
         </div>
     </div>
-    
+
     <div class="hero-marquee">
         <div class="marquee-track">
             <div class="marquee-item"><span>Web Development</span><div class="marquee-dot"></div></div>
@@ -292,24 +292,29 @@
 </footer>
 
 <script>
-/* Custom Cursor */
+/* Custom Cursor — desktop only */
 var cursor = document.getElementById('cursor');
 var cursorRing = document.getElementById('cursorRing');
 var ringX = 0, ringY = 0, mouseX = 0, mouseY = 0;
 
-document.addEventListener('mousemove', function(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top  = mouseY + 'px';
-});
-(function animateRing() {
-    ringX += (mouseX - ringX) * 0.12;
-    ringY += (mouseY - ringY) * 0.12;
-    cursorRing.style.left = ringX + 'px';
-    cursorRing.style.top  = ringY + 'px';
-    requestAnimationFrame(animateRing);
-})();
+if (window.matchMedia('(pointer: fine)').matches) {
+    document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.left = mouseX + 'px';
+        cursor.style.top  = mouseY + 'px';
+    });
+    (function animateRing() {
+        ringX += (mouseX - ringX) * 0.12;
+        ringY += (mouseY - ringY) * 0.12;
+        cursorRing.style.left = ringX + 'px';
+        cursorRing.style.top  = ringY + 'px';
+        requestAnimationFrame(animateRing);
+    })();
+} else {
+    cursor.style.display = 'none';
+    cursorRing.style.display = 'none';
+}
 document.querySelectorAll('a, button').forEach(function(el) {
     el.addEventListener('mouseenter', function() {
         cursor.classList.add('hover');
