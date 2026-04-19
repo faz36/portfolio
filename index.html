@@ -89,6 +89,7 @@
             <div class="marquee-item"><span>Laravel &amp; PHP</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>MySQL &amp; Firebase</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>REST API</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>ASP.NET Core</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>Full-Stack</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>Cisco Certified</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>SAS Analytics</span><div class="marquee-dot"></div></div>
@@ -97,6 +98,7 @@
             <div class="marquee-item"><span>Laravel &amp; PHP</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>MySQL &amp; Firebase</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>REST API</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>ASP.NET Core</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>Full-Stack</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>Cisco Certified</span><div class="marquee-dot"></div></div>
             <div class="marquee-item"><span>SAS Analytics</span><div class="marquee-dot"></div></div>
@@ -165,6 +167,8 @@
                     <div class="skill-tag"><span>Laravel</span></div>
                     <div class="skill-tag"><span>Flutter</span></div>
                     <div class="skill-tag"><span>PHP</span></div>
+                    <div class="skill-tag"><span>ASP.NET Core</span></div>
+                    <div class="skill-tag"><span>C#</span></div>
                     <div class="skill-tag"><span>MySQL</span></div>
                     <div class="skill-tag"><span>Firebase</span></div>
                     <div class="skill-tag"><span>REST API</span></div>
@@ -208,11 +212,9 @@
                         <div class="stack-dot"></div>
                         <div class="stack-dot"></div>
                     </div>
-
                     <a href="apk/app-release.apk" download class="project-link apk-btn">
                         Download APK <span>⬇</span>
                     </a>
-
                     <a href="https://github.com/faz36/belly_balance_app" target="_blank" class="project-link">View Code <span>&#8594;</span></a>
                 </div>
             </div>
@@ -236,6 +238,27 @@
                         <div class="stack-dot"></div>
                     </div>
                     <button class="project-link project-link-btn" onclick="openCaseStudy()">Read Case Study <span>&#8594;</span></button>
+                </div>
+            </div>
+
+            <div class="project-card" id="proj3">
+                <div class="project-header">
+                    <div class="project-num">03</div>
+                    <div class="project-tags">
+                        <span class="project-tag-item">Web</span>
+                        <span class="project-tag-item">ASP.NET Core</span>
+                        <span class="project-tag-item">MySQL</span>
+                    </div>
+                </div>
+                <h3>TaskTracker &#8212; Task Management System</h3>
+                <p>A full-stack task management web app built with ASP.NET Core 8 MVC and MySQL. Features include a live dashboard with task summary cards, full CRUD operations, filter and search by title, status and priority, and secure user authentication with ASP.NET Identity. Built to expand skills beyond Laravel into the Microsoft .NET ecosystem.</p>
+                <div class="project-footer">
+                    <div class="project-stack">
+                        <div class="stack-dot"></div>
+                        <div class="stack-dot"></div>
+                        <div class="stack-dot"></div>
+                    </div>
+                    <a href="https://github.com/faz36/TaskTracker" target="_blank" class="project-link">View Code <span>&#8594;</span></a>
                 </div>
             </div>
 
@@ -355,7 +378,7 @@ var observer = new IntersectionObserver(function(entries) {
         if (e.isIntersecting) e.target.classList.add('visible');
     });
 }, { threshold: 0.12 });
-document.querySelectorAll('#aboutLayout, #proj1, #proj2, #contactLayout').forEach(function(el) {
+document.querySelectorAll('#aboutLayout, #proj1, #proj2, #proj3, #contactLayout').forEach(function(el) {
     observer.observe(el);
 });
 
@@ -373,7 +396,6 @@ function openCaseStudy() {
 function closeCaseStudy() {
     pdfModal.classList.remove('open');
     document.body.style.overflow = '';
-    /* delay clearing src so close animation plays first */
     setTimeout(function() { pdfIframe.src = ''; }, 400);
 }
 pdfClose.addEventListener('click', closeCaseStudy);
