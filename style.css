@@ -972,6 +972,6 @@ footer p { color: rgba(250, 247, 242, 0.28); font-size: 0.78rem; letter-spacing:
     .meta-row { padding: 14px 16px; }
     .pdf-modal-name { font-size: 0.88rem; }
     .project-card h3 { font-size: 1.35rem; }
-    .project-num { font-size: 3.0rem !important; line-height: 1; margin-bottom: 8px; }
+    .project-num { font-size: 5.0rem !important; line-height: 1; margin-bottom: 8px; }
     .project-header { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
